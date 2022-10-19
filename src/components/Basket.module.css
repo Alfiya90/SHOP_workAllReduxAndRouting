@@ -1,0 +1,14 @@
+.basket{
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-areas:"a b";
+    grip-temple-column:3fr, 30px;
+    grid-gap: 2vw;
+}
+.image{
+    grid-area: a;
+}
+.buttom{
+    grid-area: b;
+}

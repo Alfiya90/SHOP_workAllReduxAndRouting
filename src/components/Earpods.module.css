@@ -1,0 +1,17 @@
+.style{
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;;
+    colum-gap: 2vw;
+    row-gap: 2vw;
+    grid-template-areas:
+  "a a a"
+  "a a a"
+  "a a a";
+}
+.appWrapperContent{
+    grid-area: a;
+    background-color: cadetblue;
+}
