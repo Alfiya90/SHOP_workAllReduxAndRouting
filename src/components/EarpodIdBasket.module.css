@@ -1,0 +1,9 @@
+.app-wrapper {
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-areas:
+  "a a"
+  "b c"
+  "d c"  ;
+}

@@ -1,6 +1,40 @@
 import store from './store'
 
-let basketState = []
+let basketState = [
+   { item: {
+           id: "1",
+           img:"/Image.png",
+           title:"Model1",
+           price:1200,
+           rate: 4.8
+       },
+       count: 0
+
+    },
+    { item: {
+            id: "2",
+            img:"/Image1.png",
+            title:"Model2",
+            price:3500,
+            rate: 4.8
+        },
+        count: 0
+
+
+    },
+    { item:{
+            id: "3",
+            img:"/Image2.png",
+            title:"Model3",
+            price:2800,
+            rate: 4.8
+        },
+        count: 0
+
+    }
+
+
+]
 /*let box = {
     item,
     count

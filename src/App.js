@@ -39,8 +39,8 @@ function App({state}) {
         </div>
         <div>
             <Routes>
-                <Route path="/earpods" element={<Earpods items ={items} count ={count}/>}  />
-                <Route path ="/basket" element ={<Basket items ={items}/>}/>
+                <Route path="/earpods" element={<Earpods state ={state} items ={items} count ={count}/>}  />
+                <Route path ="/basket" element ={<Basket items ={items} state={state.basketPage}/>}/>
             </Routes>
 
         </div>
