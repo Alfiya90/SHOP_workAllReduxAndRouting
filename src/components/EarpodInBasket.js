@@ -1,24 +1,29 @@
 import React from "react";
-import {addItemAC} from "../state/basketReducer";
-import {deleteItemAC} from "../state/basketReducer";
+import {useDispatch, useSelector} from "react-redux";
+import {addItemAC, deleteItemAC} from "../state/basketReducer";
 
-const EarpodInBasket = ({item, count}) => {
+
+export const EarpodInBasket = ({item, count}) => {
+    const dispatch = useDispatch()
 
     return (
         <div>
-           <h4>{item.title}</h4>
+            <h4>{item.title}</h4>
             <div>
-                <img  src={`${process.env.PUBLIC_URL}${item.img}`}/>
+                <img src={`${process.env.PUBLIC_URL}${item.img}`}/>
             </div>
             <div>
                 {item.price}
             </div>
             <div>
-                <button >-</button>
-                <a>{count}</a>
-                <button >+</button>
+                <button onClick={ () => {
+                    dispatch(deleteItemAC(item))
+                }}> -</button>
+                <a> {count} </a>
+                <button onClick={ () => {
+                    dispatch(addItemAC(item))
+                }}> +</button>
             </div>
         </div>)
 }
 
-export  default EarpodInBasket;

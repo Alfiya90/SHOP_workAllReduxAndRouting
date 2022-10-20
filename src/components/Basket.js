@@ -1,20 +1,19 @@
-import React, {useState} from "react";
-import {CardTypeOne} from "./CardTypeOne";
-import classes from "./Basket.module.css"
-import store from "../state/store";
-import EarpodInBasket from "./EarpodInBasket";
+import React from "react";
+import {EarpodInBasket} from "./EarpodInBasket";
+import {useSelector} from "react-redux";
 
-export const Basket = ({state}) => {
-    debugger;
+
+export const Basket = () => {
+
+
+    const EarpodsInBasket = useSelector((state) => state.basketPage)
 
     return <div>
-
-
         <div>
-            {state.map((box)=> {return <EarpodInBasket key = {box.item.title} item = {box.item} count ={box.count}/>})
+            {
+                EarpodsInBasket.map((box)=> {return <EarpodInBasket key = {box.item.title} item = {box.item} count ={box.count}/>})
             }
         </div>cd
-
     </div>
 
 }

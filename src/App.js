@@ -30,7 +30,7 @@ const items=[
     }
 ]
 const count=0;
-function App({state}) {
+function App() {
   return (
       <BrowserRouter>
     <div className="app-wrapper">
@@ -39,8 +39,8 @@ function App({state}) {
         </div>
         <div>
             <Routes>
-                <Route path="/earpods" element={<Earpods state ={state} items ={items} count ={count}/>}  />
-                <Route path ="/basket" element ={<Basket items ={items} state={state.basketPage}/>}/>
+                <Route path="/earpods" element={<Earpods  items ={items}/>}  />
+                <Route path ="/basket" element ={<Basket/>}/>
             </Routes>
 
         </div>

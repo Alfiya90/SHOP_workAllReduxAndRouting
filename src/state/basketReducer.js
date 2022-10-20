@@ -1,39 +1,6 @@
 import store from './store'
 
 let basketState = [
-   { item: {
-           id: "1",
-           img:"/Image.png",
-           title:"Model1",
-           price:1200,
-           rate: 4.8
-       },
-       count: 0
-
-    },
-    { item: {
-            id: "2",
-            img:"/Image1.png",
-            title:"Model2",
-            price:3500,
-            rate: 4.8
-        },
-        count: 0
-
-
-    },
-    { item:{
-            id: "3",
-            img:"/Image2.png",
-            title:"Model3",
-            price:2800,
-            rate: 4.8
-        },
-        count: 0
-
-    }
-
-
 ]
 /*let box = {
     item,
@@ -41,19 +8,20 @@ let basketState = [
 }*/
 
 let basketReducer = (state = basketState, action) => {
+    let newState = [...state];
     switch (action.type) {
         case "ADD": {
-            let newState = {...state};
             let index = newState.findIndex(box => box.item.id === action.item.id) //todo
+            console.log(index)
             if (index !== -1) {
                 newState[index].count++;
             } else {
                 newState.push({ item: action.item, count: 1})
             }
-            return newState;
+            break;
         }
         case "DELETE": {
-            let newState = {...state};
+
             let index = newState.findIndex(box => box.item.id === action.item.id) //todo
             if (index !== -1) {
                 newState[index].count--;
@@ -61,12 +29,18 @@ let basketReducer = (state = basketState, action) => {
                     newState.splice(index, 1);
                 }
             }
-            return newState;
+            break;
         }
-        default:
-            return state;
+        default:{
+            break;
+        }
+
+
 
     }
+    console.log(action)
+    console.log(newState)
+    return newState;
 }
 
 export const addItemAC = (item) => {

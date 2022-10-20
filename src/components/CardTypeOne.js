@@ -1,17 +1,12 @@
 import React, {useState} from "react";
 import styles from "./CardTypeOne.module.css"
+import {useDispatch} from "react-redux";
+import {addItemAC} from "../state/basketReducer";
 
 export  const CardTypeOne =({item})=>{
-
-    const [count, setCount]=useState(0);
-    let increment=()=>{
-        setCount(count+1)
-    }
-
+    let dispatch = useDispatch();
     return <div className ={styles.cardTypeOne}>
-            <div>{count}</div>
         <div className={styles.positionCenter} >
-
             <img className ={styles.img} src={`${process.env.PUBLIC_URL}${item.img}`}/>
         </div>
         <div className={styles.firstRow}>
@@ -27,7 +22,9 @@ export  const CardTypeOne =({item})=>{
                 <p>{item.rate}</p>
             </div>
             <div>
-                <button onClick={increment}>Купить</button>
+                <button onClick={() => {
+                    dispatch(addItemAC(item))
+                }}>Купить</button>
             </div>
         </div>
 
