@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./CardTypeOne.module.css"
 
 export  const CardTypeOne =({item})=>{
+
     const [count, setCount]=useState(0);
     let increment=()=>{
         setCount(count+1)

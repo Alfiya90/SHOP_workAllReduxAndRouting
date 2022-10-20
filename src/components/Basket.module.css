@@ -8,6 +8,7 @@
 }
 .image{
     grid-area: a;
+
 }
 .buttom{
     grid-area: b;

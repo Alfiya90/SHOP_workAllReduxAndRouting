@@ -8,18 +8,21 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 const items=[
     {
+        id: "1",
         img:"/Image.png",
         title:"Model1",
         price:1200,
         rate: 4.8
     },
     {
+        id: "2",
         img:"/Image1.png",
         title:"Model2",
         price:3500,
         rate: 4.8
     },
     {
+        id: "3",
         img:"/Image2.png",
         title:"Model3",
         price:2800,
@@ -27,7 +30,7 @@ const items=[
     }
 ]
 const count=0;
-function App() {
+function App({state}) {
   return (
       <BrowserRouter>
     <div className="app-wrapper">
