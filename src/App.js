@@ -37,11 +37,14 @@ function App() {
         <div>
             <Header items={items} count={count} />
         </div>
-        <div>
+        <div >
             <Routes>
                 <Route path="/earpods" element={<Earpods  items ={items}/>}  />
                 <Route path ="/basket" element ={<Basket/>}/>
             </Routes>
+        </div>
+        <div >
+            Options
         </div>
     </div>
       </BrowserRouter>

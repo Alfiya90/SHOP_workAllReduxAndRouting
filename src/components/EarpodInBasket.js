@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {addItemAC, deleteItemAC} from "../state/basketReducer";
-import classes from "./EarpodIdBasket.module.css"
+import classes from "./EarpodInBasket.module.css"
 
 export const EarpodInBasket = ({item, count}) => {
     const dispatch = useDispatch()

@@ -10,28 +10,15 @@ export const CardTypeOne = ({item}) => {
             <img className={styles.img} src={`${process.env.PUBLIC_URL}${item.img}`}/>
         </div>
         <div className={styles.modelAndPrise}>
-            <div className={styles.firstRow}>
-                <div className={styles.flex1}>
-                    <p>{item.title}</p>
-                </div>
-                <div className={styles.flex3}>
-                    <p>{item.price}</p>
-                </div>
-            </div>
-
-
+            <p>{item.title}</p>
+            <p>{item.price}</p>
         </div>
-        <div className={styles.secondRow}>
-            <div className={styles.flex1}>
-                <p>{item.rate}</p>
-            </div>
-            <div>
-                <button onClick={() => {
-                    dispatch(addItemAC(item))
-                }}>Купить
-                </button>
-            </div>
+        <div className={styles.modelAndPrise}>
+            <p >{item.rate}</p>
+            <button className={styles.button} onClick={() => {
+                dispatch(addItemAC(item))
+            }}>Купить
+            </button>
         </div>
-
     </div>
 }

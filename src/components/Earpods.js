@@ -4,10 +4,10 @@ import classes from "./Earpods.module.css"
 
 export const Earpods=({items}) => {
     return <div className={classes.main }>
-        <ul>
+        <p>
             {items.map(item => {
             return <CardTypeOne key={item.title} item = {item}/>
-        })}</ul>
+        })}</p>
 
 
     </div>

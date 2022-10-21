@@ -1,25 +1,35 @@
 .cardTypeOne{
-    width: 15vh;
-    height:25vh;
+    width: 20vh;
+    height:27vh;
     margin: 1vh;
     -webkit-box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
     -moz-box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
     box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
+    border-radius: 20px;
+
 }
 .img {
-    width: 15vh;
-    height:15vh;
+    padding-top: 10px;
+    width: 18vh;
+    height:18vh;
 }
 .positionCenter{
     align-items:center;
     display:flex;
     justify-content:center;
-     ;
-}
-/*.modelAndPrise{
-    display: flex;
 
-}*/
+}
+.modelAndPrise{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: -40px;
+    margin-top: -5px;
+    align-items: center;
+    font-family: "Arial Narrow";
+    font-size: 14px;
+}
 .firstRow{
     display: flex;
     justify-content: center;
@@ -42,3 +52,18 @@
 .pointer{
     cursor: pointer;
 }
+.rate{
+    margin-bottom: 10px;
+}
+.button{
+    margin: 0 auto;
+    width: 70px;
+    height: 22px;
+    margin-left: 80px;
+    padding: 0;
+    border-radius: 7px;
+    border-color: darkgrey;
+}
+
+
+
