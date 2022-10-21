@@ -1,22 +1,28 @@
 .cardTypeOne{
-    width: 35vh;
-    height:35vh;
+    width: 15vh;
+    height:25vh;
     margin: 1vh;
     -webkit-box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
     -moz-box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
     box-shadow: -10px -2px 54px -6px rgba(34, 60, 80, 0.47) inset;
 }
 .img {
-    width: 20vh;
-    height:20vh;
+    width: 15vh;
+    height:15vh;
 }
 .positionCenter{
     align-items:center;
     display:flex;
     justify-content:center;
+     ;
 }
+/*.modelAndPrise{
+    display: flex;
+
+}*/
 .firstRow{
     display: flex;
+    justify-content: center;
 }
 .secondRow{
     display: flex;

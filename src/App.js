@@ -42,12 +42,7 @@ function App() {
                 <Route path="/earpods" element={<Earpods  items ={items}/>}  />
                 <Route path ="/basket" element ={<Basket/>}/>
             </Routes>
-
         </div>
-        <div>
-            <Navbar/>
-        </div>
-
     </div>
       </BrowserRouter>
   );

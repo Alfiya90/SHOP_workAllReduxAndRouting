@@ -1,0 +1,27 @@
+ul{
+    margin: 0;
+}
+
+.header{
+    background: whitesmoke;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  5px 0px 8px;
+    color:grey;
+    font-family: "Arial Narrow";
+    font-size: large;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.basket{
+    padding-right: 5px;
+}
+.pad {
+    padding: 0px 5px 8px 0;
+    color: black;
+    font-weight: 1000;
+}

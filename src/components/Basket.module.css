@@ -1,15 +1,39 @@
 .basket{
     display: grid;
-    width: 1200px;
+    width: 800px;
     margin: 0 auto;
     grid-template-areas:"a b";
-    grip-temple-column:3fr, 30px;
-    grid-gap: 2vw;
-}
-.image{
-    grid-area: a;
+    grip-temple-column:2fr, 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
 
 }
-.buttom{
+
+.main{
+    grid-area: a;
+    display: inline-block;
+
+
+
+}
+.summ {
     grid-area: b;
+    margin-top: 50px;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 18px;
+    background: ghostwhite;
+    padding: 5px 40px 0px 40px;
+    border-radius: 30px;
+    margin-right: 150px;
+}
+
+.text{
+    color:lightgrey;
+    font-size: xx-small;
+    margin: 0 auto;
+    margin-bottom: -18px;
 }

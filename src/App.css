@@ -1,7 +1,8 @@
 .app-wrapper{
   display: grid;
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
   grid-template-rows: 1fr 10fr 1fr;
   grid-gap: 2vw;
+  background: lightgrey;
 }

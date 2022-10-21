@@ -6,12 +6,7 @@ let mapStateToProps = (state) => {
     return{
         state:state
     }
-
-
-
 }
 let mapDispatchToProps = (dispath) => {
-
 }
-
 export let EarpodIdBasketContainer = connect(mapStateToProps, mapDispatchToProps)(EarpodInBasket)
