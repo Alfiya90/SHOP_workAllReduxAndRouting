@@ -9,7 +9,7 @@ export const Basket = () => {
     return <div className={classes.basket}>
         <div className={classes.main}>
             {
-                EarpodsInBasket.map((box)=> {return <EarpodInBasket key = {box.item.title} item = {box.item} count ={box.count}/>})
+                EarpodsInBasket.map((box)=> {return <EarpodInBasket key = {box.item.title} item = {box.item} count ={box.count} summ = {box.summ}/>})
             }
         </div>
         <div className={classes.summ}>

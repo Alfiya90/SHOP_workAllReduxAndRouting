@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 import classes from "./Header.module.css"
 
 
-export const Header = ({count}) => {
+export const Header = () => {
     const navigate = useNavigate();
     const counter = useSelector((state) => state.basketPage.map((box) => {
         return box.count

@@ -5,18 +5,21 @@ let basketState = [
 /*let box = {
     item,
     count
+    summ
 }*/
 
 let basketReducer = (state = basketState, action) => {
     let newState = [...state];
+    let summ = 0;
     switch (action.type) {
         case "ADD": {
             let index = newState.findIndex(box => box.item.id === action.item.id) //todo
             console.log(index)
             if (index !== -1) {
                 newState[index].count++;
+                newState[index].summ = newState[index].count * newState[index].item.price;
             } else {
-                newState.push({ item: action.item, count: 1})
+                newState.push({ item: action.item, count: 1, summ: action.item.price})
             }
             break;
         }
@@ -25,6 +28,7 @@ let basketReducer = (state = basketState, action) => {
             let index = newState.findIndex(box => box.item.id === action.item.id) //todo
             if (index !== -1) {
                 newState[index].count--;
+                newState[index].summ = newState[index].count * newState[index].item.price;
                 if (newState[index].count === 0) {
                     newState.splice(index, 1);
                 }
@@ -34,9 +38,6 @@ let basketReducer = (state = basketState, action) => {
         default:{
             break;
         }
-
-
-
     }
     console.log(action)
     console.log(newState)

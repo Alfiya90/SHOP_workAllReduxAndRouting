@@ -17,7 +17,8 @@
     background-color: cadetblue;
 }*/
 .main{
-    display:flex;
+    display: flex;
+    flex-wrap: wrap-reverse;
     margin: 0 auto;
     justify-content: space-between;
 }

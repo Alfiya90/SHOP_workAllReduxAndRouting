@@ -29,13 +29,13 @@ const items=[
         rate: 4.8
     }
 ]
-const count=0;
+
 function App() {
   return (
       <BrowserRouter>
     <div className="app-wrapper">
         <div>
-            <Header items={items} count={count} />
+            <Header/>
         </div>
         <div >
             <Routes>

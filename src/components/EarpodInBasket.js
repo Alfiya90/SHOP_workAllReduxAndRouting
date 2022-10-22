@@ -3,10 +3,9 @@ import {useDispatch, useSelector} from "react-redux";
 import {addItemAC, deleteItemAC} from "../state/basketReducer";
 import classes from "./EarpodInBasket.module.css"
 
-export const EarpodInBasket = ({item, count}) => {
+export const EarpodInBasket = ({item, count, summ}) => {
     const dispatch = useDispatch()
 
-    let summ = count*item.price
     return (
         <div className={classes.appWrapper}>
             <div>
@@ -25,8 +24,6 @@ export const EarpodInBasket = ({item, count}) => {
                             dispatch(addItemAC(item))
                         }}> +</button>
                     </nav>
-
-
                     <div className={classes.summ}>
                         <h4>
                             {summ}
